@@ -26,8 +26,9 @@ final class EffectsShowcase {
         makeTransverseChromaticAberration(),
         makeChromaticAberration(),
         makeAberrationWithNoise(),
-        makeTransverseAberrationWithNoise()
-    ]
+        makeTransverseAberrationWithNoise(),
+        makeStaticVHS()
+    ] + makeLUTs()
 
     private init() {}
 
@@ -49,6 +50,8 @@ final class EffectsShowcase {
                     partialResult + filter.name + ", "
                 })
                 name += composed.inputFilters.last.map { $0.name } ?? ""
+            } else if let lut = filter as? FilterColorCube, let lutName = lut.lutName {
+                name += ": \(lutName)"
             }
             return ShowcaseItem(image: uiImage, name: name)
         }
@@ -87,4 +90,12 @@ private func makeTransverseAberrationWithNoise() -> CIFilter {
     let composed = CompositeFilter()
     composed.inputFilters = [chromaticAberration, noise]
     return composed
+}
+
+private func makeStaticVHS() -> CIFilter {
+    StaticVHS()
+}
+
+private func makeLUTs() -> [CIFilter] {
+    try! ColorCubeLoader(bundle: .main).load()
 }
