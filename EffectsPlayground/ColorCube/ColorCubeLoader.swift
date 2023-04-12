@@ -43,9 +43,6 @@ public final class ColorCubeLoader {
                     throw ColorCubeLoaderError.failedToCraeteCGImageSource(path)
                 }
 
-                let name = (path as NSString).deletingPathExtension
-                    .replacingOccurrences(of: "LUT_\(dimension)_", with: "")
-
                 let filter = FilterColorCube()
                 filter.dimension = dimension
                 filter.lutImage = CGImageSourceCreateImageAtIndex(imageSource, 0, nil)

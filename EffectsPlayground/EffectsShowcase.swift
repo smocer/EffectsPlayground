@@ -21,6 +21,8 @@ struct ShowcaseItem: Identifiable {
 final class EffectsShowcase {
     static let shared = EffectsShowcase()
 
+    var selectedImage: UIImage = UIImage(named: "example_photo")!
+
     private let ciContext = CIContext()
     private let ciFilters: [CIFilter] = [
         makeTransverseChromaticAberration(),
@@ -33,8 +35,7 @@ final class EffectsShowcase {
     private init() {}
 
     func renderExamples() -> [ShowcaseItem] {
-        let testImage = UIImage(named: "example_photo")!
-        let inputImage = CIImage(image: testImage)!
+        let inputImage = CIImage(image: selectedImage)!
         let items: [ShowcaseItem] = ciFilters.compactMap { filter in
             filter.setValue(inputImage, forKey: "inputImage")
             guard let outImage = filter.outputImage else {
