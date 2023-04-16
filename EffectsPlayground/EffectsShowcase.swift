@@ -21,16 +21,17 @@ struct ShowcaseItem: Identifiable {
 final class EffectsShowcase {
     static let shared = EffectsShowcase()
 
-    var selectedImage: UIImage = UIImage(named: "example_photo")!
+    var selectedImage: UIImage = UIImage(named: "woman-with-short-haircut-short-sleeved-shirt-stands-front-building")!
 
     private let ciContext = CIContext()
     private let ciFilters: [CIFilter] = [
+        makeFilterPSD1(),
         makeTransverseChromaticAberration(),
         makeChromaticAberration(),
         makeAberrationWithNoise(),
         makeTransverseAberrationWithNoise(),
-        makeStaticVHS()
-    ] + makeLUTs()
+        makeStaticVHS(),
+    ]
 
     private init() {}
 
@@ -99,4 +100,8 @@ private func makeStaticVHS() -> CIFilter {
 
 private func makeLUTs() -> [CIFilter] {
     try! ColorCubeLoader(bundle: .main).load()
+}
+
+private func makeFilterPSD1() -> CIFilter {
+    FilterPSD1()
 }
