@@ -28,11 +28,10 @@
 		6C56620E29E69EFA003F4938 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 6C56620D29E69EFA003F4938 /* YPImagePicker */; };
 		6C56621229E6B2A9003F4938 /* SwiftUI+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56621129E6B2A9003F4938 /* SwiftUI+Rotation.swift */; };
 		6C56621529E83C7D003F4938 /* ColorFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6C56621429E83C7D003F4938 /* ColorFilter.metal */; };
-		6C56621829E931C7003F4938 /* FilterPSD1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56621729E931C7003F4938 /* FilterPSD1.swift */; };
+		6C56621829E931C7003F4938 /* FilterPSD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56621729E931C7003F4938 /* FilterPSD.swift */; };
 		6C56621A29E937F7003F4938 /* ColorBalance.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6C56621929E937F7003F4938 /* ColorBalance.metal */; };
 		6C56621C29E9454D003F4938 /* ChannelMixer.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6C56621B29E9454D003F4938 /* ChannelMixer.metal */; };
-		6C56621E29EC5670003F4938 /* FilterPSD2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56621D29EC5670003F4938 /* FilterPSD2.swift */; };
-		6C56622029EC665C003F4938 /* PSD1Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56621F29EC665C003F4938 /* PSD1Details.swift */; };
+		6C56622029EC665C003F4938 /* PSDDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56621F29EC665C003F4938 /* PSDDetails.swift */; };
 		6C56622229EC72B6003F4938 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56622129EC72B6003F4938 /* Vector.swift */; };
 		6C56622629EC9DD6003F4938 /* SwiftUIRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56622529EC9DD6003F4938 /* SwiftUIRepresentable.swift */; };
 		6C56622929EC9E03003F4938 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56622829EC9E03003F4938 /* SettingsView.swift */; };
@@ -41,6 +40,9 @@
 		6C56623029ECA057003F4938 /* ChannelMixerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56622F29ECA057003F4938 /* ChannelMixerSettingsView.swift */; };
 		6C56623229ECA065003F4938 /* OverlaySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56623129ECA065003F4938 /* OverlaySettingsView.swift */; };
 		6C56623429ECAE09003F4938 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56623329ECAE09003F4938 /* Colors.swift */; };
+		6C56623629ECB366003F4938 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56623529ECB366003F4938 /* ImageSaver.swift */; };
+		6C56623829ECBDC5003F4938 /* PSDSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56623729ECBDC5003F4938 /* PSDSettings.swift */; };
+		6C56623A29ECC25F003F4938 /* CIImage+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C56623929ECC25F003F4938 /* CIImage+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,11 +68,10 @@
 		6C56621129E6B2A9003F4938 /* SwiftUI+Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Rotation.swift"; sourceTree = "<group>"; };
 		6C56621429E83C7D003F4938 /* ColorFilter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorFilter.metal; sourceTree = "<group>"; };
 		6C56621629E85D43003F4938 /* ColorConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConversion.h; sourceTree = "<group>"; };
-		6C56621729E931C7003F4938 /* FilterPSD1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPSD1.swift; sourceTree = "<group>"; };
+		6C56621729E931C7003F4938 /* FilterPSD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPSD.swift; sourceTree = "<group>"; };
 		6C56621929E937F7003F4938 /* ColorBalance.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ColorBalance.metal; sourceTree = "<group>"; };
 		6C56621B29E9454D003F4938 /* ChannelMixer.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ChannelMixer.metal; sourceTree = "<group>"; };
-		6C56621D29EC5670003F4938 /* FilterPSD2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPSD2.swift; sourceTree = "<group>"; };
-		6C56621F29EC665C003F4938 /* PSD1Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSD1Details.swift; sourceTree = "<group>"; };
+		6C56621F29EC665C003F4938 /* PSDDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSDDetails.swift; sourceTree = "<group>"; };
 		6C56622129EC72B6003F4938 /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		6C56622529EC9DD6003F4938 /* SwiftUIRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRepresentable.swift; sourceTree = "<group>"; };
 		6C56622829EC9E03003F4938 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -79,6 +80,9 @@
 		6C56622F29ECA057003F4938 /* ChannelMixerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMixerSettingsView.swift; sourceTree = "<group>"; };
 		6C56623129ECA065003F4938 /* OverlaySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlaySettingsView.swift; sourceTree = "<group>"; };
 		6C56623329ECAE09003F4938 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		6C56623529ECB366003F4938 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		6C56623729ECBDC5003F4938 /* PSDSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSDSettings.swift; sourceTree = "<group>"; };
+		6C56623929ECC25F003F4938 /* CIImage+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +146,7 @@
 				6C5661C729E11ADF003F4938 /* StaticVHS.swift */,
 				6C5661C129E05667003F4938 /* ChromaticAberration.swift */,
 				6C5661C329E0589D003F4938 /* CompositeFilter.swift */,
-				6C56621729E931C7003F4938 /* FilterPSD1.swift */,
-				6C56621D29EC5670003F4938 /* FilterPSD2.swift */,
+				6C56621729E931C7003F4938 /* FilterPSD.swift */,
 				6C5661C529E0618C003F4938 /* NoiseFilter.swift */,
 			);
 			path = Effects;
@@ -186,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				6C5661B029E044E2003F4938 /* EffectsShowcaseView.swift */,
-				6C56621F29EC665C003F4938 /* PSD1Details.swift */,
+				6C56621F29EC665C003F4938 /* PSDDetails.swift */,
 				6C56622A29ECA002003F4938 /* Settings */,
 			);
 			path = Views;
@@ -198,6 +201,8 @@
 				6C56622129EC72B6003F4938 /* Vector.swift */,
 				6C56623329ECAE09003F4938 /* Colors.swift */,
 				6C56622529EC9DD6003F4938 /* SwiftUIRepresentable.swift */,
+				6C56623529ECB366003F4938 /* ImageSaver.swift */,
+				6C56623729ECBDC5003F4938 /* PSDSettings.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				6C56621129E6B2A9003F4938 /* SwiftUI+Rotation.swift */,
+				6C56623929ECC25F003F4938 /* CIImage+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -304,20 +310,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C56622629EC9DD6003F4938 /* SwiftUIRepresentable.swift in Sources */,
-				6C56621E29EC5670003F4938 /* FilterPSD2.swift in Sources */,
 				6C5661FF29E163BE003F4938 /* FilterColorCube.swift in Sources */,
 				6C56621C29E9454D003F4938 /* ChannelMixer.metal in Sources */,
 				6C5661C229E05667003F4938 /* ChromaticAberration.swift in Sources */,
 				6C5661B129E044E2003F4938 /* EffectsShowcaseView.swift in Sources */,
 				6C56622C29ECA030003F4938 /* PhotoFilterSettingsView.swift in Sources */,
-				6C56621829E931C7003F4938 /* FilterPSD1.swift in Sources */,
-				6C56622029EC665C003F4938 /* PSD1Details.swift in Sources */,
+				6C56621829E931C7003F4938 /* FilterPSD.swift in Sources */,
+				6C56622029EC665C003F4938 /* PSDDetails.swift in Sources */,
 				6C56622929EC9E03003F4938 /* SettingsView.swift in Sources */,
 				6C56621529E83C7D003F4938 /* ColorFilter.metal in Sources */,
 				6C56621229E6B2A9003F4938 /* SwiftUI+Rotation.swift in Sources */,
 				6C5661C029E046C7003F4938 /* EffectsShowcase.swift in Sources */,
+				6C56623629ECB366003F4938 /* ImageSaver.swift in Sources */,
 				6C56622E29ECA040003F4938 /* ColorBalanceSettingsView.swift in Sources */,
 				6C5661C829E11ADF003F4938 /* StaticVHS.swift in Sources */,
+				6C56623829ECBDC5003F4938 /* PSDSettings.swift in Sources */,
 				6C5661FC29E1618F003F4938 /* ColorCubeLoader.swift in Sources */,
 				6C56621A29E937F7003F4938 /* ColorBalance.metal in Sources */,
 				6C5661AF29E044E2003F4938 /* EffectsPlaygroundApp.swift in Sources */,
@@ -326,6 +333,7 @@
 				6C56622229EC72B6003F4938 /* Vector.swift in Sources */,
 				6C56623429ECAE09003F4938 /* Colors.swift in Sources */,
 				6C5661C629E0618C003F4938 /* NoiseFilter.swift in Sources */,
+				6C56623A29ECC25F003F4938 /* CIImage+Helpers.swift in Sources */,
 				6C56623229ECA065003F4938 /* OverlaySettingsView.swift in Sources */,
 				6C5661BE29E0459B003F4938 /* TransverseChromaticAberration.swift in Sources */,
 				6C5661C429E0589D003F4938 /* CompositeFilter.swift in Sources */,
@@ -462,6 +470,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone usage permission";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -496,6 +505,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone usage permission";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

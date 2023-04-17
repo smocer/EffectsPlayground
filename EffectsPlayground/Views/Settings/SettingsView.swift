@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-extension FilterPSD1.Settings: SwiftUIRepresentable {
-    func makeSwiftView(binding: Binding<FilterPSD1.Settings>) -> some View {
+extension PSDSettings: SwiftUIRepresentable {
+    func makeSwiftView(binding: Binding<PSDSettings>) -> some View {
             VStack {
                 Text("Photo filter")
                     .font(.title2)
@@ -59,9 +59,9 @@ extension FilterPSD1.Settings: SwiftUIRepresentable {
     }
 }
 
-struct FilterPSD1Settings_Preview: PreviewProvider {
+struct PSDSettings_Preview: PreviewProvider {
     @State
-    private static var settings = FilterPSD1.Settings.default
+    private static var settings = PSDSettings.default
 
     static var previews: some View {
         ScrollView {

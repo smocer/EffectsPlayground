@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-extension FilterPSD1.Settings.Overlay: SwiftUIRepresentable {
-    func makeSwiftView(binding: Binding<FilterPSD1.Settings.Overlay>) -> some View {
+extension PSDSettings.Overlay: SwiftUIRepresentable {
+    func makeSwiftView(binding: Binding<PSDSettings.Overlay>) -> some View {
         Toggle("👁️ Visible?", isOn: binding.isOn)
             .fixedSize()
 
@@ -25,9 +25,9 @@ extension FilterPSD1.Settings.Overlay: SwiftUIRepresentable {
     }
 }
 
-struct FilterPSD1SettingsOverlay_Preview: PreviewProvider {
+struct PSDSettingsOverlay_Preview: PreviewProvider {
     @State
-    private static var overlay = FilterPSD1.Settings.default.overlay
+    private static var overlay = PSDSettings.default.overlay
 
     static var previews: some View {
         ScrollView {

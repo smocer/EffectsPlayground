@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-extension FilterPSD1.Settings.ColorBalance: SwiftUIRepresentable {
-    func makeSwiftView(binding: Binding<FilterPSD1.Settings.ColorBalance>) -> some View {
+extension PSDSettings.ColorBalance: SwiftUIRepresentable {
+    func makeSwiftView(binding: Binding<PSDSettings.ColorBalance>) -> some View {
         Toggle("👁️ Visible?", isOn: binding.isOn)
             .fixedSize()
 
@@ -48,9 +48,9 @@ extension FilterPSD1.Settings.ColorBalance: SwiftUIRepresentable {
     }
 }
 
-struct FilterPSD1SettingsColorBalance_Preview: PreviewProvider {
+struct PSDSettingsColorBalance_Preview: PreviewProvider {
     @State
-    private static var colorBalance = FilterPSD1.Settings.default.colorBalance
+    private static var colorBalance = PSDSettings.default.colorBalance
 
     static var previews: some View {
         ScrollView {

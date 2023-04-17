@@ -31,9 +31,17 @@ struct EffectsShowcaseView: View {
                     Spacer(minLength: 16)
 
                     NavigationLink {
-                        PSD1Details(inputImage: EffectsShowcase.shared.selectedImage)
+                        PSDDetails(inputImage: EffectsShowcase.shared.selectedImage, settings: .psd1)
                     } label: {
                         Text("PSD 1 Details")
+                    }
+
+                    Spacer(minLength: 16)
+
+                    NavigationLink {
+                        PSDDetails(inputImage: EffectsShowcase.shared.selectedImage, settings: .psd2)
+                    } label: {
+                        Text("PSD 2 Details")
                     }
 
                     Spacer(minLength: 16)

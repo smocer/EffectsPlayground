@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-extension FilterPSD1.Settings.ChannelMixer: SwiftUIRepresentable {
-    func makeSwiftView(binding: Binding<FilterPSD1.Settings.ChannelMixer>) -> some View {
+extension PSDSettings.ChannelMixer: SwiftUIRepresentable {
+    func makeSwiftView(binding: Binding<PSDSettings.ChannelMixer>) -> some View {
         Toggle("👁️ Visible?", isOn: binding.isOn)
             .fixedSize()
 
@@ -65,9 +65,9 @@ extension FilterPSD1.Settings.ChannelMixer: SwiftUIRepresentable {
     }
 }
 
-struct FilterPSD1SettingsPhotoChannelMixer: PreviewProvider {
+struct PSDSettingsPhotoChannelMixer: PreviewProvider {
     @State
-    private static var channelMixer = FilterPSD1.Settings.default.channelMixer
+    private static var channelMixer = PSDSettings.default.channelMixer
 
     static var previews: some View {
         ScrollView {

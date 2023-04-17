@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-extension FilterPSD1.Settings.PhotoFilter: SwiftUIRepresentable {
-    func makeSwiftView(binding: Binding<FilterPSD1.Settings.PhotoFilter>) -> some View {
+extension PSDSettings.PhotoFilter: SwiftUIRepresentable {
+    func makeSwiftView(binding: Binding<PSDSettings.PhotoFilter>) -> some View {
         Toggle("👁️ Visible?", isOn: binding.isOn)
             .fixedSize()
 
@@ -28,9 +28,9 @@ extension FilterPSD1.Settings.PhotoFilter: SwiftUIRepresentable {
     }
 }
 
-struct FilterPSD1SettingsPhotoFilter_Preview: PreviewProvider {
+struct PSDSettingsPhotoFilter_Preview: PreviewProvider {
     @State
-    private static var photoFilter = FilterPSD1.Settings.default.photoFilter
+    private static var photoFilter = PSDSettings.default.photoFilter
 
     static var previews: some View {
         ScrollView {

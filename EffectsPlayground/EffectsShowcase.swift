@@ -26,6 +26,7 @@ final class EffectsShowcase {
     private let ciContext = CIContext()
     private let ciFilters: [CIFilter] = [
         makeFilterPSD1(),
+        makeFilterPSD2(),
         makeTransverseChromaticAberration(),
         makeChromaticAberration(),
         makeAberrationWithNoise(),
@@ -103,5 +104,13 @@ private func makeLUTs() -> [CIFilter] {
 }
 
 private func makeFilterPSD1() -> CIFilter {
-    FilterPSD1()
+    let f = FilterPSD()
+    f.settings = .psd1
+    return f
+}
+
+private func makeFilterPSD2() -> CIFilter {
+    let f = FilterPSD()
+    f.settings = .psd2
+    return f
 }
